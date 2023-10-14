@@ -1,0 +1,26 @@
+@use "fonts";
+@use "typography";
+@use "colors";
+
+:root {
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+}
+
+* {
+  font-family: 'Inter';
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}

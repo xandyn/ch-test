@@ -1,0 +1,21 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+
+  &.narrow {
+    padding: 0 24px;
+  }
+}
+
+.footer {
+  margin: 24px;
+  gap: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

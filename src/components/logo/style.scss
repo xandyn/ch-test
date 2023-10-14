@@ -1,0 +1,24 @@
+@use "@css/colors";
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+@mixin brand-text {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.catch {
+  @include brand-text;
+  color: colors.$brand;
+  margin-left: 5px;
+}
+
+.hotels {
+  @include brand-text;
+  color: colors.$brand2;
+}
