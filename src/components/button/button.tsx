@@ -16,7 +16,7 @@ export const Button = (props: PropsWithChildren<Props>) => {
   })
 
   return (
-    <button {...rest} className={className}>
+    <button onMouseDown={(e) => e.preventDefault()} {...rest} className={className}>
       {children}
     </button>
   )

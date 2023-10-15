@@ -21,23 +21,41 @@
   background: colors.$brand;
   color: colors.$white;
 
+  &:hover:enabled {
+    background: #8800D6;
+  }
+
+  &:focus:enabled,
+  &:active:enabled {
+    background: #6700A3;
+  }
+
   &:disabled {
     cursor: not-allowed;
-    color: colors.$brand-text-disabled;
-    background: colors.$brand-disabled;
+    color: #A470C2;
+    background: #F9F2FD;
   }
 }
 
 .button-secondary {
   @include button;
   background: colors.$white;
-  color: colors.$brand-text-secondary;
-  border: 1px solid colors.$brand-text-secondary;
+  color: #6B00A8;
+  border: 1px solid #6B00A8;
+
+  &:hover:enabled {
+    background: #F9F2FD;
+  }
+
+  &:focus:enabled,
+  &:active:enabled {
+    background: #F5E9FC;
+  }
 
   &:disabled {
     cursor: not-allowed;
-    color: colors.$brand-text-secondary-disabled;
-    border: 1px solid colors.$brand-text-secondary-disabled;
+    color: #EBD8F8;
+    border: 1px solid #EBD8F8;
   }
 }
 

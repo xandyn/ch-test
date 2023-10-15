@@ -11,12 +11,14 @@ class Onboarding {
     this.direction = 0
   }
 
-  setPage = (page: number) => {
+  setState = (page: number, direction: number) => {
     this.page = page
+    this.direction = direction
   }
 
-  setDirection = (direction: number) => {
-    this.direction = direction
+  resetState = () => {
+    this.page = 0
+    this.direction = 0
   }
 }
 

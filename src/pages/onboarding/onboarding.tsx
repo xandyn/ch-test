@@ -21,25 +21,25 @@ export const Onboarding = observer(() => {
     const newPage = page + newDirection
 
     if (newPage >= 0 && newPage < images.length) {
-      onboardingStore.setPage(newPage)
-      onboardingStore.setDirection(newDirection)
+      onboardingStore.setState(newPage, newDirection)
     }
+  }
+
+  const navigateToSignup = () => {
+    navigate('/signup')
+    onboardingStore.resetState()
   }
 
   const onActionClick = () => {
     if (page === images.length - 1) {
-      navigate('/signup')
+      navigateToSignup()
     } else {
       paginate(1)
     }
   }
 
-  const onSkipClick = () => {
-    navigate('/signup')
-  }
-
   const navControl = (
-    <Button variant="text" onClick={onSkipClick}>
+    <Button variant="text" onClick={navigateToSignup}>
       Skip
     </Button>
   )
